@@ -78,23 +78,26 @@ public class PlayerControllerV4 : MonoBehaviour
         if (grounded)
          {
              anim.SetBool("Grounded", true);
+             anim.SetBool("isJumping",false);
              doubleJump = true;
          }
          else
          {
              anim.SetBool("Grounded", false);
-             anim.SetBool("Jump", false);
+             anim.SetBool("isJumping", false);
          }
 
          if ((Input.GetKeyDown(KeyCode.Space) || aButton) && doubleJump)
          {
-             anim.SetBool("Jump", true);
-             rb2d.velocity = UnityEngine.Vector2.up * jumpForce;
+             anim.SetBool("isJumping", true);
+            anim.SetBool("Grounded", false);
+            rb2d.velocity = UnityEngine.Vector2.up * jumpForce;
 
              if((Input.GetKeyDown(KeyCode.Space) || aButton) && !grounded && doubleJump)
              {
-                 anim.SetBool("Jump", true);
-                 rb2d.velocity = UnityEngine.Vector2.up * jumpForce;
+                 anim.SetBool("isJumping", true);
+                anim.SetBool("Grounded", false);
+                rb2d.velocity = UnityEngine.Vector2.up * jumpForce;
                  doubleJump = false;
              }
          }
@@ -149,25 +152,6 @@ public class PlayerControllerV4 : MonoBehaviour
         float rTrigger = Input.GetAxis("Right Trigger");
         bool rBumper = Input.GetButtonDown("Right Bumper");
 
-        if(rTrigger > 0.0f)
-        {
-            Debug.Log("A");
-        }
-
-        //Disparo
-        if (timeBtwShots <= 0)
-        {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                Instantiate(Projectile, shotPos.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
-            }
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
-        }
-
         //SuperDash
         if(dashTime < 0f)
         {
@@ -177,6 +161,7 @@ public class PlayerControllerV4 : MonoBehaviour
             superDash = false;
             canDash = false;
             anim.SetBool("isDashing", false);
+            anim.SetBool("isDashingDU", false);
         }
 
         //Dash control
@@ -184,13 +169,13 @@ public class PlayerControllerV4 : MonoBehaviour
         {
             rb2d.velocity = new UnityEngine.Vector2(1f, 1f) * 200;
             superDash = true;
-            anim.SetBool("isDashing", true);
+            anim.SetBool("isDashingDU", true);
         }
         else if(moveH < 0 && moveV > 0 && rTrigger > 0 && canDash)
         {
             rb2d.velocity = new UnityEngine.Vector2(-1f, 1f) * 200;
             superDash = true;
-            anim.SetBool("isDashing", true);
+            anim.SetBool("isDashingDU", true);
         }
         else if(moveH > 0 && rTrigger > 0 && canDash)
         {
@@ -208,26 +193,20 @@ public class PlayerControllerV4 : MonoBehaviour
         {
             rb2d.velocity = UnityEngine.Vector2.up * scnDashSpeed;
             superDash = true;
-            anim.SetBool("isDashing", true);
-        }
-        else if (moveV < 0 && rTrigger > 0 && canDash)
-        {
-            rb2d.velocity = UnityEngine.Vector2.up * scnDashSpeed;
-            superDash = true;
-            anim.SetBool("isDashing", true);
+            anim.SetBool("isDashingDU", true);
         }
 
         //Dash teclado
         if (Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow) && canDash)
         {
-            rb2d.velocity = new UnityEngine.Vector2(1f, 1f) * scnDashSpeed;
+            rb2d.velocity = new UnityEngine.Vector2(1f, 1f) * 200;
             superDash = true;
             anim.SetBool("isDashing", true);
             anim.SetBool("Grounded", false);
         }
         else if(Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow) && canDash)
         {
-            rb2d.velocity = new UnityEngine.Vector2(-1f, 1f) * scnDashSpeed;
+            rb2d.velocity = new UnityEngine.Vector2(-1f, 1f) * 200;
             superDash = true;
             anim.SetBool("isDashing", true);
         }
@@ -249,13 +228,8 @@ public class PlayerControllerV4 : MonoBehaviour
             superDash = true;
             anim.SetBool("isDashing", true);
         }
-        else if(Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.DownArrow) && canDash)
-        {
-            rb2d.velocity = UnityEngine.Vector2.down * scnDashSpeed;
-            superDash = true;
-            anim.SetBool("isDashing", true);
-        }
         
+        //Recarga dash
         if (canDash == false)
         {
             rechargeSuperDash += Time.deltaTime;

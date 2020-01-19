@@ -108,27 +108,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 132
-        width: 173
-        height: 583
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7978fabc58f0b1242955134924630ce2
-      internalID: -5830203985031737046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAMEJAM_1
-      rect:
-        serializedVersion: 2
-        x: 243
         y: 449
         width: 101
         height: 265
@@ -139,7 +118,28 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357b5eaeea6eb5d4d9c65483c3525ef6
+      spriteID: 6883150df25a67247b9bd4ccd3a1d9bf
+      internalID: -5830203985031737046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM_1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 132
+        width: 173
+        height: 583
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da6515e8365d2b46beb19a02d0ca933
       internalID: 3774592519330834336
       vertices: []
       indices: 

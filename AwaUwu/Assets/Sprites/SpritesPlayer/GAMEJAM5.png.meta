@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 8c292c2a4f5b5594db1caa99fac89b64
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4570041370497573023
+    second: GAMEJAM5_0
+  - first:
+      213: -3089305931875128256
+    second: GAMEJAM5_1
+  - first:
+      213: -7025621893201759044
+    second: GAMEJAM5_2
+  - first:
+      213: -2499053236689061111
+    second: GAMEJAM5_3
+  - first:
+      213: 4925485408287820489
+    second: GAMEJAM5_6
+  - first:
+      213: -1183732977704226171
+    second: GAMEJAM5_8
+  - first:
+      213: 6759800933611454134
+    second: GAMEJAM5_11
+  - first:
+      213: -8038790710245363579
+    second: GAMEJAM5_12
+  - first:
+      213: -5055767214979690854
+    second: GAMEJAM5_4
+  - first:
+      213: 8919389258312061512
+    second: GAMEJAM5_5
+  - first:
+      213: -2873199387168639499
+    second: GAMEJAM5_7
+  - first:
+      213: 7824031438600722468
+    second: GAMEJAM5_9
+  - first:
+      213: 6420788691491810313
+    second: GAMEJAM5_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +79,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +109,306 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GAMEJAM5_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 489
+        width: 112
+        height: 202
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049852e74b7c18478a54dac873b5b8f
+      internalID: -4570041370497573023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 489
+        width: 203
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65536f07f46b95d4e970e5737fac4a1a
+      internalID: -3089305931875128256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_2
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 489
+        width: 203
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86692fe2f9b32e4a8b1da326af686f8
+      internalID: -7025621893201759044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 488
+        width: 204
+        height: 103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a084db6f39cd7824a847327ccf2ef0b8
+      internalID: -2499053236689061111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 316
+        width: 203
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128142186342cdc49b7f150aa5205026
+      internalID: 4925485408287820489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_8
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 316
+        width: 219
+        height: 157
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5124700304802b5468ade1b3124ee61e
+      internalID: -1183732977704226171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 316
+        width: 203
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01b61193620fdd458a1a33226f65d31
+      internalID: 6759800933611454134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 316
+        width: 203
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97092a5f93a63c74b9db3b4a29813466
+      internalID: -8038790710245363579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_4
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 310
+        width: 185
+        height: 159
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024451633c1948f46b5de62e629b04ea
+      internalID: -5055767214979690854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 111
+        width: 192
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2921d0c7b71892745804a50959c98a47
+      internalID: 8919389258312061512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 111
+        width: 192
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfec9c7762bcd24b8727a74d99add03
+      internalID: -2873199387168639499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 111
+        width: 192
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e3b264870ed7c4b9c6cef8a7833df4
+      internalID: 7824031438600722468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAMEJAM5_10
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 125
+        width: 192
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac20969ddade1f42af22a3c7969f6c2
+      internalID: 6420788691491810313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
